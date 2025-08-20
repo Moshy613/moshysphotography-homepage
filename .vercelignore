@@ -1,0 +1,33 @@
+# Firebase files (not needed for Vercel frontend deployment)
+functions/
+firebase.json
+firestore.rules
+firestore.indexes.json
+.firebaserc
+.firebase/
+
+# Development files
+.obsidian/
+Welcome.md
+DEPLOYMENT.md
+README.md
+
+# Environment files
+.env*
+functions/.env*
+
+# Node modules
+node_modules/
+functions/node_modules/
+
+# Build outputs
+functions/lib/
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

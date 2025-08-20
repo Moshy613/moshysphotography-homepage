@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Moshy Friedman Photography Portfolio with AI Chat",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "dev": "firebase serve",
-    "build": "firebase deploy",
+    "build": "echo 'Static build - no build step needed'",
     "start": "firebase serve"
   },
   "dependencies": {

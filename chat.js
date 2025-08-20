@@ -14,7 +14,7 @@ class ChatManager {
         this.isLoading = false;
         this.chatHistory = [];
         
-        // Firebase Functions URL - update this when you deploy
+        // Firebase Functions URL - will be updated after Firebase deployment
         this.functionsUrl = 'https://us-central1-testing-moshysphotography-app.cloudfunctions.net';
         
         this.init();
