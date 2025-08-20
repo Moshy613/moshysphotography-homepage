@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moshy Friedman - Montreal Photographer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Moshy Friedman</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Capturing Montreal's Soul</h1>
+                <p class="hero-subtitle">Through the lens of Moshy Friedman</p>
+                <p class="hero-description">Professional photographer specializing in capturing the essence of Montreal's urban landscape, portraits, and life's precious moments.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn-secondary">Book Session</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://instagram.com/mtl_moshysphotogrpahy" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-camera"></i>
+                    <p>Featured Photography</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">A glimpse into my photographic journey through Montreal</p>
+                
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="street">Street</button>
+                    <button class="filter-btn" data-filter="portrait">Portrait</button>
+                    <button class="filter-btn" data-filter="urban">Urban</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="street">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-road"></i>
+                                <p>Montreal Streets</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Street Photography</h3>
+                            <p>Capturing life in motion</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="portrait">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                                <p>Portrait Session</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Portrait Photography</h3>
+                            <p>Telling personal stories</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="urban">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-building"></i>
+                                <p>Urban Landscape</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Urban Photography</h3>
+                            <p>Montreal's architecture</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="events">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-calendar"></i>
+                                <p>Event Coverage</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Event Photography</h3>
+                            <p>Memorable moments</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="street">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-city"></i>
+                                <p>City Life</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>City Chronicles</h3>
+                            <p>Montreal's daily rhythm</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="portrait">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-heart"></i>
+                                <p>Couple Session</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Couple Photography</h3>
+                            <p>Love stories captured</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">About Moshy</h2>
+                        <p class="about-description">
+                            Based in the vibrant city of Montreal, I'm a passionate photographer dedicated to capturing the authentic beauty of life's moments. From the bustling streets of Old Montreal to intimate portrait sessions, my work focuses on storytelling through visual artistry.
+                        </p>
+                        <p class="about-description">
+                            With years of experience in photography, I specialize in street photography, portraits, urban landscapes, and event coverage. My goal is to freeze time and create images that evoke emotion and preserve memories for a lifetime.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>500+</h3>
+                                <p>Sessions Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>5 Years</h3>
+                                <p>Experience</p>
+                            </div>
+                            <div class="stat">
+                                <h3>Montreal</h3>
+                                <p>Based</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                            <p>Moshy Friedman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-portrait"></i>
+                        </div>
+                        <h3>Portrait Sessions</h3>
+                        <p>Professional headshots, family portraits, and personal branding photography</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <h3>Street Photography</h3>
+                        <p>Capturing Montreal's urban life, culture, and spontaneous moments</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-rings-wedding"></i>
+                        </div>
+                        <h3>Event Coverage</h3>
+                        <p>Weddings, celebrations, corporate events, and special occasions</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Architecture</h3>
+                        <p>Urban landscapes, architectural photography, and city documentation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Create Together</h2>
+                <p class="section-subtitle">Ready to capture your story? Get in touch!</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Montreal, Quebec</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>hello@moshyfriedman.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h3>Instagram</h3>
+                                <p>@mtl_moshysphotogrpahy</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="street">Street Photography</option>
+                                <option value="event">Event Coverage</option>
+                                <option value="architecture">Architecture</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Moshy Friedman</h3>
+                    <p>Montreal Photographer</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://instagram.com/mtl_moshysphotogrpahy" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Moshy Friedman Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
