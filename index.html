@@ -17,7 +17,11 @@
                 <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="chat.html" class="nav-link" id="chat-nav-link" style="display: none;">Chat with Riley</a></li>
             </ul>
+            <div id="auth-buttons" class="auth-buttons">
+                <button id="login-btn" class="btn-primary">Login</button>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -295,6 +299,34 @@
         </div>
     </footer>
 
+    <!-- Comments Section -->
+    <section class="comments-section" id="comments">
+        <div class="container">
+            <h2 class="section-title">Community</h2>
+            <p class="section-subtitle">Share your thoughts and connect with fellow photography enthusiasts</p>
+            
+            <div id="comments-auth-prompt" class="auth-prompt">
+                <p>Please <button class="auth-link-btn">sign in</button> to join the conversation</p>
+            </div>
+            
+            <div id="comments-area" class="comments-container" style="display: none;">
+                <div class="comment-form-container">
+                    <form id="comment-form" class="comment-form">
+                        <textarea id="comment-text" placeholder="Share your thoughts about Montreal photography..." required></textarea>
+                        <button type="submit" class="btn-primary">Post Comment</button>
+                    </form>
+                </div>
+                
+                <div id="comments-list" class="comments-list">
+                    <!-- Comments will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="comments.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

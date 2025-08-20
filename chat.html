@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Riley - Moshy Friedman Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chat-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Moshy Friedman</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="chat.html" class="nav-link active">Chat with Riley</a></li>
+            </ul>
+            <div id="auth-buttons" class="auth-buttons">
+                <button id="login-btn" class="btn-primary">Login</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="chat-main">
+        <div id="auth-required" class="auth-required">
+            <div class="container">
+                <div class="auth-required-content">
+                    <div class="riley-avatar-large">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h1>Meet Riley</h1>
+                    <p>Your friendly photography assistant who knows all about Moshy's work, Montreal's best photo spots, and can help with booking sessions.</p>
+                    <button class="btn-primary auth-required-btn">Sign In to Chat</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-container" class="chat-container" style="display: none;">
+            <div class="chat-header">
+                <div class="container">
+                    <div class="chat-header-content">
+                        <div class="riley-info">
+                            <div class="riley-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="riley-details">
+                                <h2>Riley</h2>
+                                <p class="riley-status">Photography Assistant • Online</p>
+                            </div>
+                        </div>
+                        <button id="clear-chat" class="clear-chat-btn">
+                            <i class="fas fa-trash"></i>
+                            Clear Chat
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="container">
+                    <div class="message riley-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-text">
+                                Hi there! I'm Riley, Moshy's photography assistant. I'm here to help you learn about Moshy's amazing work, discover the best photography spots in Montreal, or assist with booking a session. What would you like to know?
+                            </div>
+                            <div class="message-time">Just now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="container">
+                    <form id="chat-form" class="chat-form">
+                        <div class="chat-input-wrapper">
+                            <textarea 
+                                id="chat-input" 
+                                placeholder="Ask Riley about Moshy's photography, Montreal spots, or booking sessions..."
+                                rows="1"
+                            ></textarea>
+                            <button type="submit" id="send-btn" class="send-btn" disabled>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="chat-suggestions">
+                            <button type="button" class="suggestion-btn">Tell me about Moshy's portfolio</button>
+                            <button type="button" class="suggestion-btn">Best photo spots in Montreal</button>
+                            <button type="button" class="suggestion-btn">How to book a session</button>
+                            <button type="button" class="suggestion-btn">Portrait photography tips</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="chat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
